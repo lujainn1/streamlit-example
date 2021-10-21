@@ -4,10 +4,10 @@ import math
 import pandas as pd
 import streamlit as st
 
-"""
+
 st.title('Fntech')
 
-"""
+
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
