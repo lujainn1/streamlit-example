@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 """
-Fntech
+st.title('Fntech')
 
 """
 
