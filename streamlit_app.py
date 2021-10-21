@@ -8,11 +8,11 @@ from PIL import Image
 st.title('Fntech')
 
 
-uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
+ uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
 if uploaded_img is not None:
  
  
-uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
+ uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
 if uploaded_img is not None:
 
 
