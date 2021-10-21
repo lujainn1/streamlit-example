@@ -7,7 +7,9 @@ from PIL import Image
 
 st.title('Fntech')
 
-
+def load_img(uploaded_img):
+image = Image.open(uploaded_img)
+return img
 
 uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
 if uploaded_img is not None:
@@ -19,5 +21,4 @@ if uploaded_img is not None:
 #Output (image)
 
 
-   image = Image.open(uploaded_img)
-   st.image(image, caption='AIOutput')
+   st.image(load_img, caption='AIOutput')
