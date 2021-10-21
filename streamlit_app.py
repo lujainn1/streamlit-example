@@ -13,4 +13,3 @@ uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg" ])
 if uploaded_img is not None:
    image = Image.open(uploaded_img)
    st.image(image, caption='AIOutput')
-   
