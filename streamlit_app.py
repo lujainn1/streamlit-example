@@ -9,16 +9,16 @@ st.title('Fntech')
 
 
 
-uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key="1")
+uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
 
-uploaded_imgg = st.file_uploaderr("Choose a file", type=["png","jpg","jpeg"], key="2")
+uploaded_imgg = st.file_uploaderr("Choose a file", type=["png","jpg","jpeg"])
 if uploaded_imgg is not None:
 
 
 
-
-
-
+#Input (uploaded_img , 2- uploaded_imgg)
+#AI 
+#Output (image)
 
 
    image = Image.open(uploaded_img)
