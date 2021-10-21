@@ -9,11 +9,11 @@ st.title('Fntech')
 
 
 uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
-if uploaded_img is not None:
+ if uploaded_img is not None:
  
  
 uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
-if uploaded_img is not None:
+ if uploaded_img is not None:
 
 
 #Input (uploaded_img , 2- uploaded_imgg)
