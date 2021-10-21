@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from __future__ import print_function
+#from__future__ import print_function
 
 import torch
 import torch.nn as nn
@@ -25,6 +25,12 @@ imsize = 512 if torch.cuda.is_available() else 256  # use small size if no gpu
 loader = transforms.Compose([
     transforms.Resize(imsize),  # scale imported image
     transforms.ToTensor()])  # transform it into a torch tensor
+
+def image_loader(image_name):
+    image = Image.open(image_name)
+    # fake batch dimension required to fit network's input dimensions
+    image = loader(image).unsqueeze(0)
+    return image.to(device, torch.float)
 
 
 st.title('Fntech')
