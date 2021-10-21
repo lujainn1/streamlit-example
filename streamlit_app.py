@@ -7,10 +7,10 @@ from PIL import Image
 
 st.title('Fntech')
 
-st.header('Style')
+st.subheader('Style')
 uploaded_imgg = st.file_uploader("",type=["png","jpg","jpeg"])
 #if uploaded_img is not None:
-st.header('Content')
+st.subheader('Content')
 uploaded_img = st.file_uploader("", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
 #if uploaded_img is not None:
 
