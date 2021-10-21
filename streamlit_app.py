@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-
+from PIL import Image
 
 st.title('Fntech')
 
@@ -26,3 +26,5 @@ if uploaded_file is not None:
    st.write(dataframe)
    uploaded_file = st.file_uploader("Choose a file")
    
+   image = Image.open('sunrise.jpg')
+   st.image(image, caption='AIOutput')
