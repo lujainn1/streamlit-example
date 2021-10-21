@@ -4,6 +4,28 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
+from __future__ import print_function
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+
+from PIL import Image
+import matplotlib.pyplot as plt
+
+import torchvision.transforms as transforms
+import torchvision.models as models
+
+import copy
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+imsize = 512 if torch.cuda.is_available() else 256  # use small size if no gpu
+
+loader = transforms.Compose([
+    transforms.Resize(imsize),  # scale imported image
+    transforms.ToTensor()])  # transform it into a torch tensor
+
 
 st.title('Fntech')
 
