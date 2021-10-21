@@ -15,5 +15,6 @@ if uploaded_img is not None:
 #Input (uploaded_img , 2- uploaded_imgg)
 #AI 
 #Output (image)
-image = Image.open(uploaded_img)
+
+ image = Image.open(uploaded_img)
 st.image(img, caption='AIOutput')
