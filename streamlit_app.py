@@ -10,12 +10,12 @@ st.title('Fntech')
 
 
 uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg" ])
-if uploaded_img is not None:
+#if uploaded_img is not None:
    """
    
    
    """
-uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg" ])
+uploaded_img = st.file_uploader2("Choose a file", type=["png","jpg","jpeg" ])
 if uploaded_img is not None:
 
 
