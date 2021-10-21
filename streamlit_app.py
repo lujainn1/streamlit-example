@@ -18,5 +18,5 @@ uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key 
 #AI 
 #Output (image)
 
- image = Image.open(uploaded_img)
+image = Image.open(uploaded_img)
 st.image(image, caption='AIOutput')
