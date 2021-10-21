@@ -14,7 +14,7 @@ uploaded_img = st.file_uploader("Content", type=["png","jpg","jpeg"], key = "<un
 #if uploaded_img is not None:
 
 
-#Input (uploaded_img , 2- uploaded_imgg)
+#Input (uploaded_img , uploaded_imgg)
 #AI 
 #Output (image)
 
