@@ -8,7 +8,7 @@ from PIL import Image
 st.title('Fntech')
 
 
-uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
+uploaded_img1 = st.file_uploader("Choose a file", type=["png","jpg","jpeg"])
 #if uploaded_img is not None:
 uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
 #if uploaded_img is not None:
@@ -18,5 +18,5 @@ uploaded_img = st.file_uploader("Choose a file", type=["png","jpg","jpeg"], key 
 #AI 
 #Output (image)
 
-image = Image.open(uploaded_img)
+image = Image.open(uploaded_img1)
 st.image(image, caption='AIOutput')
