@@ -9,7 +9,7 @@ st.title('Fntech')
 
 
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file", type=["png","jpg","jpeg" ])
 if uploaded_file is not None:
    # To read file as bytes:
    bytes_data = uploaded_file.getvalue()  
@@ -24,7 +24,6 @@ if uploaded_file is not None:
    # Can be used wherever a "file-like" object is accepted:
    dataframe = pd.read_csv(uploaded_file)
    st.write(dataframe)
-   uploaded_file = st.file_uploader("Choose a file")
    
    image = Image.open('sunrise.jpg')
    st.image(image, caption='AIOutput')
