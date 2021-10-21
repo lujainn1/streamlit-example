@@ -1,10 +1,10 @@
+from __future__ import print_function
 from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from __future__ import print_function
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
