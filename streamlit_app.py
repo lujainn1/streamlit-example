@@ -8,10 +8,10 @@ from PIL import Image
 st.title('Fntech')
 
 st.header('Style')
-uploaded_imgg = st.file_uploader(type=["png","jpg","jpeg"])
+uploaded_imgg = st.file_uploader("",type=["png","jpg","jpeg"])
 #if uploaded_img is not None:
 st.header('Content')
-uploaded_img = st.file_uploader("Content", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
+uploaded_img = st.file_uploader("", type=["png","jpg","jpeg"], key = "<uniquevalueofsomesort>")
 #if uploaded_img is not None:
 
 
