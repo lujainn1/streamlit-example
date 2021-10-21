@@ -20,4 +20,4 @@ if uploaded_img is not None:
 
 
    image = Image.open(uploaded_img)
-   st.image(image, width=250, height=250)
+   st.image(image, caption='AIOutput')
